@@ -1,0 +1,17 @@
+#chart {
+    max-width: 650px;
+    margin: 35px auto;
+  }
+
+  ::ng-deep .apexcharts-bar-series .apexcharts-series-2 rect {
+    border-radius: 0 0 10px 10px;
+  }
+
+  ::ng-deep .apexcharts-bar-series .apexcharts-series-1 rect {
+    border-radius: 0;
+  }
+
+  .title{
+    padding-top: 20px;
+    padding-left: 20px;
+  }

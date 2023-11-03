@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    // padding-left: 20vh;
+}
+
+.container .contents {
+  position : relative;
+  margin-top: 10vh;
+  min-height: 90vh;
+  
+}
+
+.container .contents .content{
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+}
+
+.container .contents {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+}
+
+
+
+//CSS property for Recent Orders Grid
+
+.container .contents .content .recent-orders{
+  min-height: 50vh;
+  flex: 5;
+  background: #FFFFFF;
+  margin: 0 25px 25px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction:column;
+
+}
+
+//CSS property for New User Section
+
+.container .contents .content .new-user{
+  flex: 2;
+  background: #FFFFFF;
+  min-height: 50vh;
+  margin: 0 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+//CSS property for Bottam graph
+  
+.container .content-3 {
+    min-height: 60vh;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .container .content-3 .Botton-line-graph {
+    min-height: 50vh;
+    flex: 1;
+    background: #FFFFFF;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .container .content-3 .Botton-column-graph {
+    min-height: 50vh;
+    flex: 1;
+    background: #FFFFFF;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .container .content-3 .Botton-pie-chart-graph {
+    min-height: 50vh;
+    flex: 1;
+    background: #FFFFFF;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  
+  //CSS property for Responsive Screen for UI
+  @media screen and (max-width:768px) {
+    
+    // flex: 1;
+  }
+  .container .content .cards{
+    justify-content: center;
+  }
+  .container .content .content-3{
+    margin: 25px;
+  }
+  .container .content .content-2 .recent-order table th:nth-child(2),
+  .container .content .content-2 .recent-order table td:nth-child(2){
+    display: none;
+  }
+
+  .container .content-3 .Botton-line-graph{
+    flex: 1;
+  }
+  .container .content-3 .Botton-column-graph{
+    flex: 1;
+  }
+  .container .content-3 .Botton-pie-chart-graph{
+    flex: 1;
+  }
+  
+  
+
+//   @media screen and (max-width: 768px) {
+//     flex 1;
+// }
+
+@media screen and (min-width: 480px) {
+    // flex: 1;
+}

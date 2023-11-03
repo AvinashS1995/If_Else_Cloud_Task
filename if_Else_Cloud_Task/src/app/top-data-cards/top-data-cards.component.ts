@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-top-data-cards',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class TopDataCardsComponent {
 
+  topCards: any;
+  iconClasses = ['fa-music', 'fa-chart-pie', 'fa-arrow-down', 'fa-sync-alt'];
+
+  constructor(private dataService: DataService) { }
+
+  ngOnInit() {
+    this.dataService.getTopCards().subscribe(data => {
+      this.topCards = data.top_cards;
+    });
+
+    
+  }
 }

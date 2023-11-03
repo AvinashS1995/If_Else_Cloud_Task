@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../service/data.service';
 
 @Component({
   selector: 'app-new-users',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class NewUsersComponent {
 
+  newUsers: any;
+
+  constructor(private dataService: DataService) { }
+
+  ngOnInit() {
+    this.dataService.getNewUsers().subscribe(data => {
+      this.newUsers = data.new_users;
+    });
+  }
 }

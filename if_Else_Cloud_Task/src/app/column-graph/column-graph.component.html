@@ -1,1 +1,17 @@
-<p>column-graph works!</p>
+ <!-- <div class="Botton-column-graph"> -->
+    <div class="title">
+        <h5>Balance Overview</h5>
+
+        <div id="chart">
+            <apx-chart
+              [series]="chartOptions.series"
+              [chart]="chartOptions.chart"
+              [dataLabels]="chartOptions.dataLabels"
+              [plotOptions]="chartOptions.plotOptions"
+              [yaxis]="chartOptions.yaxis"
+              [fill]="chartOptions.fill"
+              [tooltip]="chartOptions.tooltip"
+              [xaxis]="chartOptions.xaxis"
+            ></apx-chart>
+        </div>  
+    </div>

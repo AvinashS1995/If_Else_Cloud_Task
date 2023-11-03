@@ -1,0 +1,60 @@
+
+.content-1 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+// .content-1 .recent-orders {
+//     min-height: 50vh;
+//     flex: 1;
+//     background: white;
+//     margin: 0 25px 25px 25px;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+// }
+
+ /* Green button for Paid status */
+ .btn-green {
+    background-color: #28a745;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Grey button for Pending status */
+  .btn-grey {
+    background-color: #6c757d;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Red button for Failed status */
+  .btn-red {
+    background-color: #dc3545;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .recent-orders-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid rgba(160, 160, 160, 0.5);
+    
+  }
+
+  table{
+    padding: 10px;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
