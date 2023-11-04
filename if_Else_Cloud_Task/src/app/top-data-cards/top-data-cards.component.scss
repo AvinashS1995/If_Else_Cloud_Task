@@ -10,7 +10,7 @@
 .content .cards .card {
     width: 250px;
     height: 150px;
-    background: white;
+    background: #FFFFFF;
     margin: 20px 10px;
     display: flex;
     align-items: center;
@@ -43,4 +43,11 @@
 
   .info{
     opacity: 0.3;
+  }
+
+  @media screen and (max-width: 768px){
+
+    .content .cards .card {
+      justify-content: center;
+    }
   }

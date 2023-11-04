@@ -35,4 +35,10 @@ export class RecentOrdersComponent {
   formatDate(date: string) {
     return new Date(date).toLocaleDateString();
   }
+
+  onCutClicked(order: any) {
+    // Handle the action when the 'Cut' button is clicked
+    console.log("Cut button clicked for order:", order);
+    
+  }
 }

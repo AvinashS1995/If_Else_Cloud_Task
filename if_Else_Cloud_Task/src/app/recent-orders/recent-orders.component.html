@@ -7,6 +7,8 @@
 <!-- Recent Orders Table -->
 <table>
     <tr>
+        <th></th>
+        <th></th>
         <th>Sr. No.</th>
         <!-- <th>Id</th> -->
         <th>Name</th>
@@ -15,8 +17,11 @@
         <th>Status</th>
         <th>Tracking No</th>
         <th>Shipping</th>
+        <th></th>
     </tr>
     <tr *ngFor="let order of recentOrders; let i = index">
+        <td></td>
+        <th></th>
         <td>{{i + 1}}</td>
         <td>{{order.name}}</td>
         <td>{{order.product}}</td>
@@ -24,6 +29,7 @@
         <td><button [ngClass]="getStatusClasses(order.status)">{{order.status}}</button></td>
         <td>{{order.tracking_no}}</td>
         <td>{{order.shipping}}</td>
+        <td class="cut-button" (click)="onCutClicked(order)"><i class="bi bi-x-lg"></i></td> 
     </tr>
 </table>
 <!-- </div> -->
