@@ -1,0 +1,34 @@
+body{
+    height: 100vh;
+    background: var(--sidebar-color);
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: var(--sidebar-color);
+}
+
+nav{
+        position: fixed;
+        height: 100%;
+        max-width: 80px;
+        width: 100%;
+        flex-direction: column;
+        background: #FFFFFF;
+    border: 3px solid lightblue;
+
+    }
+
+    .sidebar-info dl{
+        font-size: 30px;
+        position: relative;
+        margin-top: 95px;
+        right: 10px;
+        
+        
+    }
+    

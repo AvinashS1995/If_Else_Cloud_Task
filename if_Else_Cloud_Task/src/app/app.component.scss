@@ -2,17 +2,21 @@
     display: flex;
     flex-direction: column;
     // padding-left: 20vh;
+    margin-top: 5vh;
+
 }
 
 .container .contents {
   position : relative;
-  margin-top: 10vh;
-  min-height: 90vh;
+  // margin-top: 20vh;
+  // min-height: 90vh;
+  max-width: 100vw;
   
 }
 
 .container .contents .content{
   min-height: 60vh;
+  // padding: 25px 15px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -20,19 +24,20 @@
 }
 
 .container .contents {
-    min-height: 60vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;    
+  min-height: 60vh;
+  margin-left: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;  
+
 }
-
-
 
 //CSS property for Recent Orders Grid
 
 .container .contents .content .recent-orders{
   min-height: 50vh;
+  
   flex: 5;
   background: #FFFFFF;
   margin: 0 25px 25px 25px;
@@ -48,6 +53,7 @@
   flex: 2;
   background: #FFFFFF;
   min-height: 50vh;
+  max-width: 200vw;
   margin: 0 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;

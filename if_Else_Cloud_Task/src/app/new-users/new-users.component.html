@@ -2,27 +2,31 @@
 
     <!-- <div class="new-user"> -->
 
-        <div class="title">
-            <h4>New User Registration</h4>
-        </div>
-        <!-- New Users Display -->
-        <table>
-            <tr>
-                <th>Picture</th>
-                <th>Name</th>
-                <th>Progress</th>
-            </tr>
-            <tr *ngFor="let user of newUsers">
-                <td><img [src]="user.picture" alt="User Image" style="border-radius: 50%;"></td>
-                <td><b></b>{{user.name}} <br> <small><i>{{user.country}}</i></small></td>
-                <td>   <div class="progress" style="height: 20px; width: 100px;">
+    <div class="title">
+        <h4>New User Registration</h4>
+    </div>
+    <!-- New Users Display -->
+    <table>
+        <tr>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Progress</th>
+        </tr>
+        <tr *ngFor="let user of newUsers">
+            <td><img [src]="user.picture" alt="User Image" style="border-radius: 50%;"></td>
+            <td><b></b>{{user.name}} <br> <small><i>{{user.country}}</i></small></td>
+            <td>
+                <div class="progress" style="height: 20px; width: 100px;">
                     <div class="progress-bar" role="progressbar" [style.width.%]="user.progress"
                         aria-valuenow="user.progress" aria-valuemin="0" aria-valuemax="100">
                         {{user.progress}}%
                     </div>
                 </div>
-            </tr>
-        
-        </table>
+            <td> <!-- Added Actions button -->
+                    <button (click)="onMoreClicked(user)" [ngClass]="{'btn-blue': i === 0, 'btn-white': i !== 0}">More</button>
+            </td>
+        </tr>
+
+    </table>
     <!-- </div> -->
-<!-- </div> -->
+    <!-- </div> -->

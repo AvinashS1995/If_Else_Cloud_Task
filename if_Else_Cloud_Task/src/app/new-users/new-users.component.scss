@@ -1,10 +1,11 @@
-.content-2 .new-user {
-    flex: 1;
-    background: white;
-    min-height: 50vh;
-    margin: 0 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
-}
+// .content-2 .new-user {
+//     flex: 1;
+//     width: 100%;
+//     background: white;
+//     min-height: 50vh;
+//     margin: 0 25px;
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+// }
 
 .title{
     display: flex;
@@ -21,4 +22,20 @@
   th, td {
     text-align: left;
     padding: 8px;
+  }
+
+  .btn-blue {
+    background-color: #1167c4;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .btn-white {
+    background-color: #FFFFFF; /* Set the background color to white */
+    color: #000000; /* Set the text color to black */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
   }
